@@ -21,6 +21,10 @@
 			$this->cart = $cart;
 		}
 
+		public function addProductToCart($product) {
+			array_push($this->cart, $product);
+		}
+
 		public function buy() {
 
 		}
