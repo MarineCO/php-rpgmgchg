@@ -6,16 +6,16 @@
 		private $name;
 		private $price;
 
-		public function __construct($strIid, $strName, $strPrice) {
+		public function __construct($strId, $strName, $strPrice) {
 			$this->id = $strId;
 			$this->name = $strName;
 			$this->price = $strPrice;
 		}
-
+		
 		public function getId() {
 			return $this->id; 
 		}
-		public function setId($strIid) {
+		public function setId($strId) {
 			$this->id = $strId;
 		}
 
