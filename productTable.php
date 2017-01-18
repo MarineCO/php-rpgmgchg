@@ -21,6 +21,18 @@
 			<td>Date récolte</td>
 			<td>Marque</td>
 		</tr>
+		<?php foreach ($products as $product) : ?>
+
+		<tr>
+			<td><?= $product->getId() ?></td>
+			<td><?= $product->getName() ?></td>
+			<td><?= $product->getPrice() ?></td>
+			<td><?= (method_exists($product, 'getProductorName') ? $product->getProductorName() : null) ?></td>
+			<td><?= (method_exists($product, 'getHarvestedAt') ? $product->getHarvestedAt() : null) ?></td>
+			<td><?= (method_exists($product, 'getBrand') ? $product->getBrand() : null) ?></td>
+		</tr>
+
+		<?php endforeach ?>
 	</table>
 	
 </body>
