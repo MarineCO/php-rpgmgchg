@@ -2,13 +2,11 @@
 
 	require ('product.php');
 
-	class Cloth extends Product
-	{
+	class Cloth extends Product {
 		
-		function __construct()
-		{
+		private $brand;
 
-		}
+
 	}
 
 ?>
