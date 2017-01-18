@@ -1,8 +1,10 @@
 <?php
 
-	class Vegetable {
+	require ('product.php');
 
-		
+	class Vegetable extends Product{
+
+
 	}
 
 ?>
