@@ -6,6 +6,9 @@
 		
 		private $brand;
 
+		public function __construct($Brand) {
+			$this->brand = $Brand;
+		}
 
 	}
 
