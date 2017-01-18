@@ -5,15 +5,16 @@
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"/>
 	<title>Exercice POO</title>
+	<link rel="stylesheet" href="userTable.css"/>
 </head>
 <body>
 
 	<h1>Tableau clients :</h1>
 
 	<table>
-		<tr>
+		<tr class="row">
 			<td>Email</td>
 			<td>Id</td>
 			<td>Date</td>
@@ -21,7 +22,7 @@
 
 		<?php foreach ($users as $user): ?>
 					
-		<tr>
+		<tr class="row">
 			<td><?= $user->getEmail() ?></td>
 			<td><?= $user->getId() ?></td>
 			<td><?= $user->getCreatedAt() ?></td>
