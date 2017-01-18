@@ -1,17 +1,16 @@
 <?php
 
-	require_once ('product.php');
+	require ('product.php');
 
 	class Vegetable extends Product {
 
 		private $productorName;
 		private $harvestedAt;
 
-		public function __construct($strIid, $strName, $strPrice, $Productor, $Harvested) {
+		public function __construct($strId, $strName, $strPrice, $Productor, $Harvested) {
 			$this->productorName = $Productor;
 			$this->harvestedAt = $Harvested;
-			parent::__construct($strIid, $strName, $strPrice)
-
+			parent::__construct($strId, $strName, $strPrice);
 		}
 
 		public function getProductorName() {
