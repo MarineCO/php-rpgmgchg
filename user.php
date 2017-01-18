@@ -6,24 +6,24 @@
 		private $id = "";
 		private $createdAt = "";
 
-		function __construct() {
-			$this->email;
-			$this->id;
-			$this->createdAt;
+		public function __construct($mail, $id, $date) {
+			$this->email = $mail;
+			$this->id = $id;
+			$this->createdAt = $date;
 		}
 
 		public function getEmail() {
 			return $this->email;
 		}
-		public function setEmail($string) {
-			$this->email = $string;
+		public function setEmail($mail) {
+			$this->email = $mail;
 		}
 
 		public function getId() {
-			return $this->email;
+			return $this->id;
 		}
-		public function setId($string) {
-			$this->email = $string;
+		public function setId($id) {
+			$this->id = $id;
 		}
 
 		public function getCreatedAt() {
