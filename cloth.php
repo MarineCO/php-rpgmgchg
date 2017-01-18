@@ -10,6 +10,9 @@
 			$this->brand = $Brand;
 		}
 
+		public function try() {
+			
+		}
 	}
 
 ?>
