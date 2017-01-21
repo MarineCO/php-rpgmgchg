@@ -1,6 +1,6 @@
 <?php
 
-	require ('product.php');
+	require ('Product.php');
 
 	class Vegetable extends Product {
 

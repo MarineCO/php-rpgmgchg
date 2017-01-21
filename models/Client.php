@@ -1,6 +1,7 @@
 <?php
 
-	require ('user.php');
+	require ('User.php');
+	
 	class Client extends User {
 
 		private $billAmount;

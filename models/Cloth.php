@@ -1,6 +1,6 @@
 <?php
 
-	require_once ('product.php');
+	require_once ('Product.php');
 
 	class Cloth extends Product {
 		

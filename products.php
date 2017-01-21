@@ -1,7 +1,7 @@
 <?php
 
-	require_once ('vegetable.php');
-	require_once ('cloth.php');
+	require_once ('models/Vegetable.php');
+	require_once ('models/Cloth.php');
 
 	$vegetable1 = new Vegetable('Id 1', 'Poivron', '3 €', 'Prod 1', '10-01-2017');
 	$vegetable2 = new Vegetable('Id 2', 'Salade', '2 €', 'Prod 2', '18-01-2017');
