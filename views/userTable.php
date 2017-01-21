@@ -1,6 +1,6 @@
 <?php 
 
-	$users = require ('../data/users.php');
+	$users = require __DIR__.('/../data/users.php');
 
 ?><!DOCTYPE html>
 <html lang="en">
