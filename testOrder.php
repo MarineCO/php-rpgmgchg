@@ -29,5 +29,11 @@
 	</table>
 	<h3>Total facture du 1er client : <?= $client1->getBillAmount().' '.'€' ?></h3>
 
+	<h2>Un second utilisateur achète un légume et un vêtement</h2>
+
+	<?php $client2->buy($vegetable2); ?>
+	<?php $client2->buy($cloth1); ?>
+
+
 </body>
 </html>
