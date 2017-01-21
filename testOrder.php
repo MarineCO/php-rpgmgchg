@@ -51,11 +51,17 @@
 			<td><?= $client2->getId() ?></td>
 			<td><?= $vegetable2->getName() ?></td>
 			<td><?= $vegetable2->getPrice() ?></td>
+			<td><?= (method_exists($vegetable1, 'getProductorName') ? $vegetable1->getProductorName() : null) ?></td>
+			<td><?= (method_exists($vegetable1, 'getHarvestedAt') ? $vegetable1->getHarvestedAt() : null) ?></td>
 		</tr>
 		<tr>
 			<td><?= $client2->getId() ?></td>
 			<td><?= $cloth1->getName() ?></td>
 			<td><?= $cloth1->getPrice() ?></td>
+			<td><?= (method_exists($cloth1, 'getProductorName') ? $cloth1->getProductorName() : null) ?></td>
+			<td><?= (method_exists($cloth1, 'getHarvestedAt') ? $cloth1->getHarvestedAt() : null) ?></td>
+			<td><?= (method_exists($cloth1, 'getBrand') ? $cloth1->getBrand() : null) ?></td>
+
 		</tr>
 	</table>
 	
