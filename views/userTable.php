@@ -1,6 +1,6 @@
 <?php 
 
-	$users = require ('users.php');
+	$users = require ('../data/users.php');
 
 ?><!DOCTYPE html>
 <html lang="en">

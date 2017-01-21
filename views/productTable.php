@@ -1,6 +1,6 @@
 <?php
 
-	$products = require ('products.php');
+	$products = require ('../data/products.php');
 
 ?><!DOCTYPE html>
 <html lang="en">

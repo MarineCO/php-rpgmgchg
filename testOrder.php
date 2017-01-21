@@ -1,7 +1,7 @@
 <?php
 
-	$users = require ('data/users.php');
-	$products = require ('data/products.php');
+	$users = require_once ('data/users.php');
+	$products = require_once ('data/products.php');
 
 ?><!DOCTYPE html>
 <html lang="en">
