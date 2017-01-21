@@ -11,5 +11,17 @@
 </head>
 <body>
 
+	<h2>Un premier utilisateur achète un des légumes</h2>
+
+	<?php $client1->buy($vegetable1); ?>
+
+	<table>
+		<tr>
+			<td>Id client</td>
+			<td>Produit acheté</td>
+			<td>Prix</td>
+		</tr>
+	</table>
+
 </body>
 </html>
