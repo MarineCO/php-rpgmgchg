@@ -1,7 +1,6 @@
 <?php
 
 	require ('user.php');
-
 	class Client extends User {
 
 		private $billAmount;
@@ -10,23 +9,22 @@
 		public function getBillAmount() {
 			return $this->billAmount; 
 		}
-		public function setBillAmount($billAmount) {
-			$this->billAmount = $billAmount;
+		public function setBillAmount($product) {
+			$this->billAmount = $this->billAmount + $product->getPrice();
+			
 		}
 
 		public function getCart() {
 			return $this->cart; 
-		}
-		public function setCart($cart) {
-			$this->cart = $cart;
 		}
 
 		public function addProductToCart($product) {
 			array_push($this->cart, $product);
 		}
 
-		public function buy() {
-
+		public function buy($product) {
+			$this->addProductToCart($product);
+			$this->setBillAmount($product);
 		}
 	}
 
