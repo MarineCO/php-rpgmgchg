@@ -1,6 +1,6 @@
 <?php
 
-	$products = require ('../data/products.php');
+	$products = require __DIR__.('/../data/products.php');
 
 ?><!DOCTYPE html>
 <html lang="en">
