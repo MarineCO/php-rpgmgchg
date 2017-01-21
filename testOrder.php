@@ -21,7 +21,13 @@
 			<td>Produit acheté</td>
 			<td>Prix</td>
 		</tr>
+		<tr>
+			<td><?= $client1->getId() ?></td>
+			<td><?= $vegetable1->getName() ?></td>
+			<td><?= $vegetable1->getPrice() ?></td>
+		</tr>
 	</table>
+	<h3>Total facture du 1er client : <?= $client1->getBillAmount().' '.'€' ?></h3>
 
 </body>
 </html>
