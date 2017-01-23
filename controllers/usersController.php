@@ -1,8 +1,8 @@
 <?php 
 
-require __DIR__.('/../views/userTable.php');
+require __DIR__.('/../data/users.php');
 
-class UserController {
+class UsersController {
 
 	public function userTable() {
 		$user = new Users();

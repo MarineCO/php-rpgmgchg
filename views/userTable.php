@@ -1,8 +1,4 @@
-<?php 
-
-	$users = require __DIR__.('/../data/users.php');
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8"/>
@@ -20,12 +16,12 @@
 			<td>Date</td>
 		</tr>
 
-		<?php foreach ($users as $user): ?>
+		<?php foreach ($users as $entry): ?>
 					
 		<tr class="row">
-			<td><?= $user->getEmail() ?></td>
-			<td><?= $user->getId() ?></td>
-			<td><?= $user->getCreatedAt() ?></td>
+			<td><?= $entry['user']->getEmail() ?></td>
+			<td><?= $entry['user']->getId() ?></td>
+			<td><?= $entry['user']->getCreatedAt() ?></td>
 		</tr>
 				
 		<?php endforeach ?>

@@ -1,7 +1,9 @@
 <?php
 
-	require 'controllers/products.php';
+require 'controllers/productsController.php';
+require 'controllers/usersController.php';
 
-	if (!isset($_GET['page'])) {
-		(new CartController())->home();
-	}
+if (!isset($_GET['page'])) {
+	(new UsersController())->userTable();
+	(new ProductsController())->productTable();
+}

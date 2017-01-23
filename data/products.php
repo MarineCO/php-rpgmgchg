@@ -9,7 +9,7 @@ class Products {
 	private $cloth;
 
 	public function __construct() {
-		$this->products = [
+		$this->vegetable = [
 			["vegetable"=> new Vegetable('Id 1', 'Poivron', '3 €', 'Prod 1', '10-01-2017')],
 			["vegetable"=> new Vegetable('Id 2', 'Salade', '2 €', 'Prod 2', '18-01-2017')]
 		];

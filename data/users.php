@@ -1,8 +1,8 @@
 <?php
 
-require __DIR__.('/../models/Client.php');
+require_once __DIR__.('/../models/Client.php');
 
-class Cart {
+class Users{
 	private $users;
 
 	public function __construct() {

@@ -17,18 +17,31 @@
 			<td>Date récolte</td>
 			<td>Marque</td>
 		</tr>
-		<?php foreach ($products as $entry) : ?>
 
+		<?php foreach ($vegetable as $entry) : ?>
 		<tr>
-			<td><?= $entry['product']->getId() ?></td>
-			<td><?= $entry['product']->getName() ?></td>
-			<td><?= $entry['product']->getPrice() ?></td>
-			<td><?= (method_exists($entry['product'], 'getProductorName') ? $entry['product']->getProductorName() : null) ?></td>
-			<td><?= (method_exists($entry['product'], 'getHarvestedAt') ? $entry['product']->getHarvestedAt() : null) ?></td>
-			<td><?= (method_exists($entry['product'], 'getBrand') ? $entry['product']->getBrand() : null) ?></td>
+			<td><?= $entry['vegetable']->getId() ?></td>
+			<td><?= $entry['vegetable']->getName() ?></td>
+			<td><?= $entry['vegetable']->getPrice() ?></td>
+			<td><?= $entry['vegetable']->getProductorName() ?></td>
+			<td><?= $entry['vegetable']->getHarvestedAt() ?></td>
+			<td><?= (method_exists($entry, 'getBrand') ? $entry['vegetable']->getBrand() : null); ?></td>
 		</tr>
 
-		<?php endforeach ?>
+		<?php endforeach; ?>
+
+		<?php foreach ($cloth as $entry) : ?>
+
+		<tr>
+			<td><?= $entry['cloth']->getId() ?></td>
+			<td><?= $entry['cloth']->getName() ?></td>
+			<td><?= $entry['cloth']->getPrice() ?></td>
+			<td><?= (method_exists($entry, 'getProductorName') ? $entry['cloth']->getProductorName() : null); ?></td>
+			<td><?= (method_exists($entry, 'getHarvestedAt') ? $entry['cloth']->getHarvestedAt() : null); ?></td>
+			<td><?= $entry['cloth']->getBrand() ?></td>
+		</tr>
+
+		<?php endforeach; ?>
 	</table>
 	
 </body>
