@@ -1,15 +1,20 @@
 <?php
 
-	require __DIR__.('/../models/Client.php');
+require __DIR__.('/../models/Client.php');
 
-	$client1 = new Client('client1@gmail.com', 'id 1', date('d-m-Y', time()));
-	$client2 = new Client('client2@gmail.com', 'id 2', date('d-m-Y', time()));
+class Cart {
+	private $users;
 
-	$arrayClients = [
-			1 => $client1,
-			2 => $client2
-	];
+	public function __construct() {
+		$this->users = [
+			["user"=> new Client('client1@gmail.com', 'id 1', date('d-m-Y', time()))],
+			["user"=> new Client('client2@gmail.com', 'id 2', date('d-m-Y', time()))]
+		];
+	}
 
-	return $arrayClients;
+	public function getUsers() {
+		return $this->users;
+	}
+}	
 
 ?>
