@@ -3,7 +3,7 @@
 require_once __DIR__.('/../models/Vegetable.php');
 require_once __DIR__.('/../models/Cloth.php');
 
-class Products {
+class Cart {
 
 	private $products;
 
