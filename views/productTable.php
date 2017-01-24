@@ -6,7 +6,7 @@
 </head>
 <body>
 	
-	<h1>Tableau produits :</h1>
+	<h2>Tableau produits :</h2>
 	
 	<table>
 		<tr>
@@ -18,27 +18,14 @@
 			<td>Marque</td>
 		</tr>
 
-		<?php foreach ($vegetable as $entry) : ?>
+		<?php foreach ($productsData as $entry) : ?>
 		<tr>
-			<td><?= $entry['vegetable']->getId() ?></td>
-			<td><?= $entry['vegetable']->getName() ?></td>
-			<td><?= $entry['vegetable']->getPrice() ?></td>
-			<td><?= $entry['vegetable']->getProductorName() ?></td>
-			<td><?= $entry['vegetable']->getHarvestedAt() ?></td>
-			<td><?= (method_exists($entry, 'getBrand') ? $entry['vegetable']->getBrand() : null); ?></td>
-		</tr>
-
-		<?php endforeach; ?>
-
-		<?php foreach ($cloth as $entry) : ?>
-
-		<tr>
-			<td><?= $entry['cloth']->getId() ?></td>
-			<td><?= $entry['cloth']->getName() ?></td>
-			<td><?= $entry['cloth']->getPrice() ?></td>
-			<td><?= (method_exists($entry, 'getProductorName') ? $entry['cloth']->getProductorName() : null); ?></td>
-			<td><?= (method_exists($entry, 'getHarvestedAt') ? $entry['cloth']->getHarvestedAt() : null); ?></td>
-			<td><?= $entry['cloth']->getBrand() ?></td>
+			<td><?= $entry->getId() ?></td>
+			<td><?= $entry->getName() ?></td>
+			<td><?= $entry->getPrice() ?></td>
+			<td><?= (method_exists($entry, 'getProductorName') ? $entry->getProductorName() : null); ?></td>
+			<td><?= (method_exists($entry, 'getHarvestedAt') ? $entry->getHarvestedAt() : null); ?></td>
+			<td><?= (method_exists($entry, 'getBrand') ? $entry->getBrand() : null); ?></td>
 		</tr>
 
 		<?php endforeach; ?>

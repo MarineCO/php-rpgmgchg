@@ -7,7 +7,7 @@
 </head>
 <body>
 
-	<h1>Tableau clients :</h1>
+	<h2>Tableau clients :</h2>
 
 	<table>
 		<tr class="row">
@@ -16,12 +16,12 @@
 			<td>Date</td>
 		</tr>
 
-		<?php foreach ($users as $entry): ?>
+		<?php foreach ($usersData as $entry): ?>
 					
 		<tr class="row">
-			<td><?= $entry['user']->getEmail() ?></td>
-			<td><?= $entry['user']->getId() ?></td>
-			<td><?= $entry['user']->getCreatedAt() ?></td>
+			<td><?= $entry->getEmail() ?></td>
+			<td><?= $entry->getId() ?></td>
+			<td><?= $entry->getCreatedAt() ?></td>
 		</tr>
 				
 		<?php endforeach ?>

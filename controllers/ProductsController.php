@@ -5,9 +5,8 @@ require __DIR__.'/../data/products.php';
 class ProductsController {
 
 	public function productTable() {
-		$product = new Products();
-		$vegetable = $product->getVegetable();
-		$cloth = $product->getCloth();
+		$products = new Products();
+		$productsData = $products->getProductsTab();
 
 		require __DIR__.'/../views/productTable.php';
 	}

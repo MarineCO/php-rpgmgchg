@@ -5,8 +5,8 @@ require __DIR__.('/../data/users.php');
 class UsersController {
 
 	public function userTable() {
-		$user = new Users();
-		$users = $user->getUsers();
+		$users = new Users();
+		$usersData = $users->getUsers();
 
 		require __DIR__.'/../views/userTable.php';
 	}

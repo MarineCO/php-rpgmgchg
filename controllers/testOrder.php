@@ -13,7 +13,7 @@
 
 	<h2>Un premier utilisateur achète un des légumes</h2>
 
-	<?php $client1->buy($this->products[0]); ?>
+	<?php $client1->buy($vegetable1); ?>
 
 	<table>
 		<tr>

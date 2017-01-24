@@ -7,8 +7,8 @@ class Users{
 
 	public function __construct() {
 		$this->users = [
-			["user"=> new Client('client1@gmail.com', 'id 1', date('d-m-Y', time()))],
-			["user"=> new Client('client2@gmail.com', 'id 2', date('d-m-Y', time()))]
+			new Client('client1@gmail.com', 'id 1', date('d-m-Y', time())),
+			new Client('client2@gmail.com', 'id 2', date('d-m-Y', time()))
 		];
 	}
 
